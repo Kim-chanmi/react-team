@@ -25,24 +25,6 @@ function ReservationTextName({ imgName, location }) {
 }
 
 const ReservationCont = () => {
-  //   const left = document.querySelector(".left");
-  //   const aside = document.getElementById("aside");
-  //   const regionBox = document.querySelector(".region_box");
-  //   const headerImg = document.querySelector("#header img");
-
-  //   left.addEventListener("mouseenter", (e) => {
-  //     aside.classList.remove("active");
-  //     regionBox.style.left = "0";
-  //     headerImg.style.transform = "translate(120px, 10px)";
-  //     headerImg.style.transition = "all 0.4s 0.09s";
-  //   });
-  //   left.addEventListener("mouseleave", (e) => {
-  //     aside.classList.add("active");
-  //     regionBox.style.left = "-15%";
-  //     headerImg.style.transform = "translate(0, 10px)";
-  //     headerImg.style.transition = "all 0.2s";
-  //   });
-
   return (
     <div className="all score">
       <div className="right">
@@ -136,14 +118,6 @@ const ReservationCont = () => {
                       location={info.location}
                     />
                   ))}
-                  {/* <div className="package">
-                    <img src="img/package02.jpg" alt="로비" />
-                    <div className="name">로비</div>
-                  </div>
-                  <div className="package">
-                    <img src="img/package03.jpg" alt="수영장" />
-                    <div className="name">수영장</div>
-                  </div> */}
                 </div>
               </div>
               <div className="room__place">
