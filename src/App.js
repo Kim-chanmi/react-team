@@ -13,9 +13,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="all score">
-        <div className="left">
-          <Aside />
-        </div>
+        <Aside />
         <div className="right">
           <Header />
           <Banner />
