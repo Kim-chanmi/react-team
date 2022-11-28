@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Aside from "./Aside";
 
 const resionText = [
   {
@@ -177,8 +178,23 @@ function ResionTextName2({ imgName, Title, star, bed, price1, price2 }) {
 }
 
 const ResionCont = () => {
+  const [selectCategory, setSelectCategory] = useState("서울");
+
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/Kim-chanmi/react-team/main/src/components/utils/Seoul.json"
+    )
+      .then((response) => response.json())
+      .then((result) => setSelectCategory(result.data))
+      .catch((error) => console.log("error", error));
+  }, [selectCategory]);
+
   return (
     <div className="all score">
+      <Aside
+        selectCategory={selectCategory}
+        setSelectCategory={setSelectCategory}
+      />
       <div className="right">
         <section id="contentsType" className="container">
           <div className="resionTop">

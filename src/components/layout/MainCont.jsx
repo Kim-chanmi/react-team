@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Aside from "./Aside";
 
 const mainText = [
   {
@@ -64,8 +65,23 @@ function MainTextName({ imgName, resionName }) {
 }
 
 const MainCont = () => {
+  const [selectCategory, setSelectCategory] = useState("서울");
+
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/Kim-chanmi/react-team/main/src/components/utils/Seoul.json"
+    )
+      .then((response) => response.json())
+      .then((result) => console.log(result.data))
+      .catch((error) => console.log("error", error));
+  }, [selectCategory]);
+
   return (
     <div className="all score">
+      <Aside
+        selectCategory={selectCategory}
+        setSelectCategory={setSelectCategory}
+      />
       <div className="right">
         <section id="contentsType" className="container">
           <div className="contents__top">

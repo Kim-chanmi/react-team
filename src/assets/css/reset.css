@@ -37,6 +37,11 @@ figcaption {
   font-weight: 500;
 }
 
+/* 버튼 */
+button {
+  background: #fff;
+}
+
 /* 시멘틱 태그 초기화 */
 article,
 aside,

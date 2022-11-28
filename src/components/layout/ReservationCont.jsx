@@ -1,4 +1,5 @@
 import React from "react";
+import Aside from "./Aside";
 
 const reservationText = [
   {
@@ -27,6 +28,7 @@ function ReservationTextName({ imgName, location }) {
 const ReservationCont = () => {
   return (
     <div className="all score">
+      <Aside />
       <div className="right">
         <section id="contentsType" className="container">
           <div className="reservation__wrap">
