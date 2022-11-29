@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Aside from "./Aside";
+/** @format */
 
 const resionText = [
   {
@@ -44,104 +43,104 @@ const resionText = [
   },
 ];
 
-const resionText2 = [
-  {
-    imgName: "resionBom01.jpg",
-    Title: "Seogwipo-si의 아파트",
-    star: "★ 4.52",
-    bed: "침대1개",
-    price1: "₩1,510,703",
-    price2: "₩865,561/월",
-  },
-  {
-    imgName: "resionBom02.jpg",
-    Title: "Seogwipo-si의 아파트",
-    star: "★ 4.52",
-    bed: "침대1개",
-    price1: "₩1,510,703",
-    price2: "₩865,561/월",
-  },
-  {
-    imgName: "resionBom03.jpg",
-    Title: "Seogwipo-si의 아파트",
-    star: "★ 4.52",
-    bed: "침대1개",
-    price1: "₩1,510,703",
-    price2: "₩865,561/월",
-  },
-  {
-    imgName: "resionBom04.jpg",
-    Title: "Seogwipo-si의 아파트",
-    star: "★ 4.52",
-    bed: "침대1개",
-    price1: "₩1,510,703",
-    price2: "₩865,561/월",
-  },
-  {
-    imgName: "resionBom05.jpg",
-    Title: "Seogwipo-si의 아파트",
-    star: "★ 4.52",
-    bed: "침대1개",
-    price1: "₩1,510,703",
-    price2: "₩865,561/월",
-  },
-  {
-    imgName: "resionBom06.jpg",
-    Title: "Seogwipo-si의 아파트",
-    star: "★ 4.52",
-    bed: "침대1개",
-    price1: "₩1,510,703",
-    price2: "₩865,561/월",
-  },
-  {
-    imgName: "resionBom07.jpg",
-    Title: "Seogwipo-si의 아파트",
-    star: "★ 4.52",
-    bed: "침대1개",
-    price1: "₩1,510,703",
-    price2: "₩865,561/월",
-  },
-  {
-    imgName: "resionBom08.jpg",
-    Title: "Seogwipo-si의 아파트",
-    star: "★ 4.52",
-    bed: "침대1개",
-    price1: "₩1,510,703",
-    price2: "₩865,561/월",
-  },
-  {
-    imgName: "resionBom09.jpg",
-    Title: "Seogwipo-si의 아파트",
-    star: "★ 4.52",
-    bed: "침대1개",
-    price1: "₩1,510,703",
-    price2: "₩865,561/월",
-  },
-  {
-    imgName: "resionBom10.jpg",
-    Title: "Seogwipo-si의 아파트",
-    star: "★ 4.52",
-    bed: "침대1개",
-    price1: "₩1,510,703",
-    price2: "₩865,561/월",
-  },
-  {
-    imgName: "resionBom11.jpg",
-    Title: "Seogwipo-si의 아파트",
-    star: "★ 4.52",
-    bed: "침대1개",
-    price1: "₩1,510,703",
-    price2: "₩865,561/월",
-  },
-  {
-    imgName: "resionBom12.jpg",
-    Title: "Seogwipo-si의 아파트",
-    star: "★ 4.52",
-    bed: "침대1개",
-    price1: "₩1,510,703",
-    price2: "₩865,561/월",
-  },
-];
+// const resionText2 = [
+//     {
+//         imgName: "resionBom01.jpg",
+//         Title: "Seogwipo-si의 아파트",
+//         star: "★ 4.52",
+//         bed: "침대1개",
+//         price1: "₩1,510,703",
+//         price2: "₩865,561/월",
+//     },
+//     {
+//         imgName: "resionBom02.jpg",
+//         Title: "Seogwipo-si의 아파트",
+//         star: "★ 4.52",
+//         bed: "침대1개",
+//         price1: "₩1,510,703",
+//         price2: "₩865,561/월",
+//     },
+//     {
+//         imgName: "resionBom03.jpg",
+//         Title: "Seogwipo-si의 아파트",
+//         star: "★ 4.52",
+//         bed: "침대1개",
+//         price1: "₩1,510,703",
+//         price2: "₩865,561/월",
+//     },
+//     {
+//         imgName: "resionBom04.jpg",
+//         Title: "Seogwipo-si의 아파트",
+//         star: "★ 4.52",
+//         bed: "침대1개",
+//         price1: "₩1,510,703",
+//         price2: "₩865,561/월",
+//     },
+//     {
+//         imgName: "resionBom05.jpg",
+//         Title: "Seogwipo-si의 아파트",
+//         star: "★ 4.52",
+//         bed: "침대1개",
+//         price1: "₩1,510,703",
+//         price2: "₩865,561/월",
+//     },
+//     {
+//         imgName: "resionBom06.jpg",
+//         Title: "Seogwipo-si의 아파트",
+//         star: "★ 4.52",
+//         bed: "침대1개",
+//         price1: "₩1,510,703",
+//         price2: "₩865,561/월",
+//     },
+//     {
+//         imgName: "resionBom07.jpg",
+//         Title: "Seogwipo-si의 아파트",
+//         star: "★ 4.52",
+//         bed: "침대1개",
+//         price1: "₩1,510,703",
+//         price2: "₩865,561/월",
+//     },
+//     {
+//         imgName: "resionBom08.jpg",
+//         Title: "Seogwipo-si의 아파트",
+//         star: "★ 4.52",
+//         bed: "침대1개",
+//         price1: "₩1,510,703",
+//         price2: "₩865,561/월",
+//     },
+//     {
+//         imgName: "resionBom09.jpg",
+//         Title: "Seogwipo-si의 아파트",
+//         star: "★ 4.52",
+//         bed: "침대1개",
+//         price1: "₩1,510,703",
+//         price2: "₩865,561/월",
+//     },
+//     {
+//         imgName: "resionBom10.jpg",
+//         Title: "Seogwipo-si의 아파트",
+//         star: "★ 4.52",
+//         bed: "침대1개",
+//         price1: "₩1,510,703",
+//         price2: "₩865,561/월",
+//     },
+//     {
+//         imgName: "resionBom11.jpg",
+//         Title: "Seogwipo-si의 아파트",
+//         star: "★ 4.52",
+//         bed: "침대1개",
+//         price1: "₩1,510,703",
+//         price2: "₩865,561/월",
+//     },
+//     {
+//         imgName: "resionBom12.jpg",
+//         Title: "Seogwipo-si의 아파트",
+//         star: "★ 4.52",
+//         bed: "침대1개",
+//         price1: "₩1,510,703",
+//         price2: "₩865,561/월",
+//     },
+// ];
 
 function ResionTextName({ classTitle, imgName, title, bed, price1, price2 }) {
   return (
@@ -158,89 +157,83 @@ function ResionTextName({ classTitle, imgName, title, bed, price1, price2 }) {
   );
 }
 
-function ResionTextName2({ imgName, Title, star, bed, price1, price2 }) {
+// function ResionTextName2({ imgName, Title, star, bed, price1, price2 }) {
+//   return (
+//     <div className="resionBomCard">
+//       <img src={`img/${imgName}`} alt="호텔룸" />
+//       <div className="resionBomdesc">
+//         <div className="resionBomTitle">
+//           {Title}
+//           <span className="star">{star}</span>
+//         </div>
+//         <div className="bed">{bed}</div>
+//         <div className="price">
+//           <em>{price1}</em>
+//           {price2}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+function ResionTextName2({ img, Title, star, bed, price2 }) {
   return (
     <div className="resionBomCard">
-      <img src={`img/${imgName}`} alt="호텔룸" />
+      <img src={`${img}`} alt="호텔룸" />
       <div className="resionBomdesc">
-        <div className="resionBomTitle">
-          {Title}
-          <span className="star">{star}</span>
-        </div>
+        <div className="resionBomTitle">{Title}</div>
+        <span className="star">★{star}</span>
         <div className="bed">{bed}</div>
-        <div className="price">
-          <em>{price1}</em>
-          {price2}
-        </div>
+        <div className="price">{price2}</div>
       </div>
     </div>
   );
 }
 
-const ResionCont = () => {
-  const [selectCategory, setSelectCategory] = useState("서울");
-
-  useEffect(() => {
-    fetch(
-      "https://raw.githubusercontent.com/Kim-chanmi/react-team/main/src/components/utils/Seoul.json"
-    )
-      .then((response) => response.json())
-      .then((result) => setSelectCategory(result.data))
-      .catch((error) => console.log("error", error));
-  }, [selectCategory]);
-
+const ResionCont = ({ selectCategory }) => {
   return (
-    <div className="all score">
-      <Aside
-        selectCategory={selectCategory}
-        setSelectCategory={setSelectCategory}
-      />
-      <div className="right">
-        <section id="contentsType" className="container">
-          <div className="resionTop">
-            <h2>Recommended Hotels in Seoul</h2>
-            <div className="checkinDate">
-              <img src="img/resionCalender.svg" alt="달력" />
-              Wed 11/17
-            </div>
-            <div className="checkoutDate">
-              <img src="img/resionCalender.svg" alt="달력" />
-              Wed 11/18
-            </div>
-            <div className="resion__inner">
-              {resionText.map((info, index) => (
-                <ResionTextName
-                  key={index}
-                  classTitle={info.classTitle}
-                  imgName={info.imgName}
-                  title={info.title}
-                  bed={info.bed}
-                  price1={info.price1}
-                  price2={info.price2}
-                />
-              ))}
-            </div>
-            <div className="resionBom__card">
-              <h2>서울 인근 숙소</h2>
-              <div className="resionbomDate">11월 17일 목 ~ 11월 18일 금</div>
-              <div className="resionBom__inner">
-                {resionText2.map((info, index) => (
-                  <ResionTextName2
-                    key={index}
-                    imgName={info.imgName}
-                    Title={info.Title}
-                    star={info.star}
-                    bed={info.bed}
-                    price1={info.price1}
-                    price2={info.price2}
-                  />
-                ))}
-              </div>
-            </div>
+    <section id="contentsType" className="container">
+      <div className="resionTop">
+        <h2>Recommended Hotels in Seoul</h2>
+        <div className="checkinDate">
+          <img src="img/resionCalender.svg" alt="달력" />
+          Wed 11/17
+        </div>
+        <div className="checkoutDate">
+          <img src="img/resionCalender.svg" alt="달력" />
+          Wed 11/18
+        </div>
+        <div className="resion__inner">
+          {resionText.map((info, index) => (
+            <ResionTextName
+              key={index}
+              classTitle={info.classTitle}
+              imgName={info.imgName}
+              title={info.title}
+              bed={info.listingBedLabel}
+              price1={info.originalPrice}
+              price2={info.discountedPrice}
+            />
+          ))}
+        </div>
+        <div className="resionBom__card">
+          <h2>서울 인근 숙소</h2>
+          <div className="resionbomDate">11월 17일 목 ~ 11월 18일 금</div>
+          <div className="resionBom__inner">
+            {selectCategory.map((info, index) => (
+              <ResionTextName2
+                key={index}
+                img={info.images[0]}
+                Title={info.listingName}
+                star={info.avgRating}
+                bed={info.listingBedLabel}
+                price2={info.accessibilityLabel}
+              />
+            ))}
           </div>
-        </section>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
