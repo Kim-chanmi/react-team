@@ -12,23 +12,26 @@ import Banner from "./components/layout/Banner";
 import Footer from "./components/layout/Footer";
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <div className="all score">
-        <Aside />
-        <div className="right">
-          <Header />
-          <Banner />
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/resion" element={<Resion />} />
-            <Route path="/reservation" element={<Reservation />} />
-          </Routes>
-        </div>
-      </div>
-      <Footer />
-    </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <div className="all score">
+                <Aside />
+                <div className="right">
+                    <Header />
+                    <Banner />
+                    <Routes>
+                        <Route path="/" element={<Main />} />
+                        <Route
+                            path="/resion/:resionCode"
+                            element={<Resion />}
+                        />
+                        <Route path="/reservation" element={<Reservation />} />
+                    </Routes>
+                </div>
+            </div>
+            <Footer />
+        </BrowserRouter>
+    );
 };
 
 export default App;
